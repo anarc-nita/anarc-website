@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOAR</title>
-    <link rel="stylesheet" href="../css/soar.css">
-    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="./css/soar.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <!-- Preloader -->
-    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="./css/preloader.css">
     <!-- ICON -->
-    <link rel="shortcut icon" href="../images/image-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/image-removebg-preview.png" type="image/x-icon">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -29,15 +29,15 @@
 <body>
      <!-- preloader content -->
      <div class="preloader">
-        <img src="../images/image-removebg-preview.png" alt="anarc-logo">
+        <img src="./images/image-removebg-preview.png" alt="anarc-logo">
   </div>
     <section class="intro">
         <!-- Desktop Navigation -->
         <nav>
             <ul style="list-style: none;">
-               <li><a class="active" href="../public/index.html">HOME</a></li>
+               <li><a class="active" href="./index.html">HOME</a></li>
                <li>
-                  <a href="#events">EVENTS
+                  <a href="./index.html#events">EVENTS
                     <i class="fas fa-angle-down"></i>
                   </a>
                   <ul style="list-style: none;">
@@ -47,11 +47,11 @@
                   </ul>
                </li>
                <li>
-                  <a href="#projects">PROJECTS
+                  <a href="./index.html#projects">PROJECTS
                   </a>
                </li>
-               <li><a href="#team">TEAM</a></li>
-               <li><a href="#gallery">GALLERY</a></li>
+               <li><a href="./index.html#team">TEAM</a></li>
+               <li><a href="./gallery.html">GALLERY</a></li>
                <li><a href="#"><i style="font-size: 1.5rem;" class="fas fa-bell"></i></a></li>
             </ul>
          </nav>
@@ -68,9 +68,9 @@
     </div>
     <div class="nav-b">
       <ul>
-        <li><a class="active" href="../public/index.html">HOME</a></li>
+        <li><a class="active" href="./index.html">HOME</a></li>
         <li>
-           <a href="#events">EVENTS
+           <a href="./index.html#events">EVENTS
            <i class="fas fa-angle-down"></i>
            </a>
            <ul class="navdrop">
@@ -80,16 +80,15 @@
            </ul>
         </li>
         <li>
-           <a href="#projects">PROJECTS
+           <a href="./index.html#projects">PROJECTS
            </a>
         </li>
-        <li><a href="#team">TEAM</a></li>
-        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="./index.html#team">TEAM</a></li>
+        <li><a href="./gallery.html">GALLERY</a></li>
      </ul>
     </div>
   </div>
     </section>
-    <div class="aboutsec">
         <div class="about">
             <div class="so">ABOUT SOAR</div>
             <p style="color: aqua;">
@@ -109,64 +108,10 @@
                 </ul>
                 </p>
         </div>
-    </div>
-    <div class="photos">
-        <div class="head">GALLERY</div>
-        <div class="gallery" id="gallery">
-            <div class="gallery-item">
-                <div class="content"><img src="../images/soar.JPG" alt=""></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="../images/team-bg.jpg" alt=""></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="../images/18950261_1604432649580522_3524846747492810752_n.jpg" alt=""></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="https://source.unsplash.com/random/?tech,choose" alt=""></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="https://source.unsplash.com/random/?tech,past" alt=""></div>
-            </div>
-            
-        </div>
-    </div>
-    <script>
-        var gallery = document.querySelector('#gallery');
-var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-var resizeAll = function () {
-    var altura = getVal(gallery, 'grid-auto-rows');
-    var gap = getVal(gallery, 'grid-row-gap');
-    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-        var el = item;
-        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-    });
-};
-gallery.querySelectorAll('img').forEach(function (item) {
-    item.classList.add('byebye');
-    if (item.complete) {
-        console.log(item.src);
-    }
-    else {
-        item.addEventListener('load', function () {
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            var gitem = item.parentElement.parentElement;
-            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-            item.classList.remove('byebye');
-        });
-    }
-});
-window.addEventListener('resize', resizeAll);
-gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-    item.addEventListener('click', function () {        
-        item.classList.toggle('full');        
-    });
-});
-
-    </script>
-    <script src="../js/index.js"></script>
-    <script src="../js/preloader.js"></script>
+    
+        
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/preloader.js"></script>
 </body>
 </html>

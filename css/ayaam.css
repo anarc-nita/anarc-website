@@ -9,37 +9,21 @@
         background-size: cover;
     }
     .about{
-        background-color:#0a1931 ;
-        width: 700px;
-        height: 450px;
-        font-size: 1.5rem;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding-left: 20px;
-        border-radius: 50px;
-        transform: translate(50%,50%);
+      background-color:#0a1931 ;
+      height: 100%;
+      font-size: 2rem;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding-left: 20px;
+      padding: 1rem 5rem;
     }
     .so{
-        padding-top:10px ;
-        font-size: 2rem;
+        padding:10px 10px 10px 0;
+        font-size: 3rem;
         font-weight: bolder;
         color:#d8e3e7;
     }
-    .aboutsec{
-        background-color: #3d84b8;
-        height: 100vh;
-    }
-    .photos{
-        background-color:#0a1931;
-        height: 100vh;
-    }
-    .head{
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 3rem;
-        text-align: center;
-        padding: 20px;
-    }
+      
 
     @media (max-width: 768px) {
         .intro{
@@ -47,24 +31,14 @@
           background-size:cover;
         }
         .about{
-          width: auto;
-          height: auto;
+         
           font-size: 0.5rem;
-          transform: none;
           border-radius: 0%;
           padding-left: 5px;
         }
-        .aboutsec{
-          background-color: transparent;
-          height: auto;
-        }
+        
         .so{
           font-size: 1rem;
         }
-        .photos{
-          height: auto;
-        }
-        .gallery {
-          grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-        }
+        
       }
