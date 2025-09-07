@@ -114,6 +114,7 @@ nav .fa {
     color: transparent;
     -webkit-text-stroke: 1px yellow;
     background: url(../img/back.png);
+    background-clip: text;
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 10s linear infinite;
@@ -513,9 +514,11 @@ h3 {
     font-weight: 900;
     font-size: 1.6rem;
     background: linear-gradient(90deg, #004aad, #00a6ff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .container a {
     display: inline-block;
