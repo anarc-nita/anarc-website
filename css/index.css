@@ -259,6 +259,14 @@ p {
     justify-content: space-between;
 }
 
+.row-sp {
+    /* margin-top: 5%; */
+    display: flex;
+    width: 60%;
+    margin: 5% auto;
+    justify-content: space-between;
+}
+
 .acti-col {
     flex-basis: 31%;
     background-color: #fff3f3;
@@ -628,6 +636,10 @@ h3 {
 
     /* Media for activities */
     .row {
+        flex-direction: column;
+    }
+
+    .row-sp {
         flex-direction: column;
     }
 
