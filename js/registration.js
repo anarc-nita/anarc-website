@@ -1,5 +1,6 @@
 import { hasPlaceholderConfig, registerForEvent } from "../firebase/firebase.js";
-
+document.addEventListener("DOMContentLoaded", () => {
+  
 const form = document.getElementById("registrationForm");
 const submitBtn = document.getElementById("submitBtn");
 const btnText = submitBtn.querySelector(".btn-text");
@@ -80,3 +81,5 @@ function showMessage(type, html) {
   formMessage.style.display = "block";
   formMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
+
+});
